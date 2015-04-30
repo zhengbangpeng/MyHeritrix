@@ -1,0 +1,11 @@
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: MSNBot
+Allow: /
+
+User-agent: *
+Disallow: /

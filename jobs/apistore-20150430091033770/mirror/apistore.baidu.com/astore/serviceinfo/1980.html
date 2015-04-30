@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<html class="expanded" lang="zh">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<title>空气质量指数_生活常用_数据服务_API服务_API Store</title>
+<meta name="keywords" content="空气质量指数_基本描述，空气质量指数_SDK与文档，空气质量指数_API，空气质量指数_全部评论" />
+<meta name="description" content="空气质量指数能提供实时空气质量情况，目前支持全国161个城市：
+
+&amp;quot;三亚&amp;quot;,&amp;quot;三门峡&amp;quot;,&amp;quot;上海&amp;quot;,&amp;quot;东莞&amp;quot;,&amp;quot;东营&amp;quot;,&amp;quot;中山&amp;quot;,&amp;quot;临安&amp;quot;,&amp;quot;临汾&amp;quot;,&amp;quot;临沂&amp;quot;,&amp;quot;丹东&amp;quot;,&amp;quot;丽水&amp;quot;,&amp;quot;义乌&amp;quot;,&amp;quot;乌鲁木齐&amp;quot;,&amp;quot;九江&amp;quot;,&amp;quot;乳山&amp;quot;,&amp;quot;云浮&amp;quot;,&amp;quot;佛山&amp;quot;,&amp;quot;保定&amp;quot;,&amp;quot;克拉玛依&amp;quot;,&amp;quot;兰州&amp;quot;,&amp;quot;包头&amp;quot;,&amp;quot;北京&amp;quot;,&amp;quot;北海&amp;quot;,&amp;quot;南京&amp;quot;,&amp;quot;南充&amp;quot;,&amp;quot;南宁&amp;quot;,&amp;quot;南昌&amp;quot;,&amp;quot;南通&amp;quot;,&amp;quot;即墨&amp;quot;,&amp;quot;厦门&amp;quot;,&amp;quot;句容&amp;quot;,&amp;quot;台州&amp;quot;,&amp;quot;合肥&amp;quot;,&amp;quot;吉林&amp;quot;,&amp;quot;吴江&amp;quot;,&amp;quot;呼和浩特&amp;quot;,&amp;quot;咸阳&amp;quot;,&amp;quot;哈尔滨&amp;quot;,&amp;quot;唐山&amp;quot;,&amp;quot;嘉兴&amp;quot;,&amp;quot;嘉峪关&amp;quot;,&amp;quot;大同&amp;quot;,&amp;quot;大庆&amp;quot;,&amp;quot;大连&amp;quot;,&amp;quot;天津&amp;quot;,&amp;quot;太仓&amp;quot;,&amp;quot;太原&amp;quot;,&amp;quot;威海&amp;quot;,&amp;quot;宁波&amp;quot;,&amp;quot;安阳&amp;quot;,&amp;quot;宜兴&amp;quot;,&amp;quot;宜宾&amp;quot;,&amp;quot;宜昌&amp;quot;,&amp;quot;宝鸡&amp;quot;,&amp;quot;宿迁&amp;quot;,&amp;quot;富阳&amp;quot;,&amp;quot;寿光&amp;quot;,&amp;quot;岳阳&amp;quot;,&amp;quot;常州&amp;quot;,&amp;quot;常德&amp;quot;,&amp;quot;常熟&amp;quot;,&amp;quot;平度&amp;quot;,&amp;quot;平顶山&amp;quot;,&amp;quot;广州&amp;quot;,&amp;quot;库尔勒&amp;quot;,&amp;quot;廊坊&amp;quot;,&amp;quot;延安&amp;quot;,&amp;quot;开封&amp;quot;,&amp;quot;张家口&amp;quot;,&amp;quot;张家港&amp;quot;,&amp;quot;张家界&amp;quot;,&amp;quot;徐州&amp;quot;,&amp;quot;德州&amp;quot;,&amp;quot;德阳&amp;quot;,&amp;quot;惠州&amp;quot;,&amp;quot;成都&amp;quot;,&amp;quot;扬州&amp;quot;,&amp;quot;承德&amp;quot;,&amp;quot;抚顺&amp;quot;,&amp;quot;拉萨&amp;quot;,&amp;quot;招远&amp;quot;,&amp;quot;揭阳&amp;quot;,&amp;quot;攀枝花&amp;quot;,&amp;quot;文登&amp;quot;,&amp;quot;无锡&amp;quot;,&amp;quot;日照&amp;quot;,&amp;quot;昆山&amp;quot;,&amp;quot;昆明&amp;quot;,&amp;quot;曲靖&amp;quot;,&amp;quot;本溪&amp;quot;,&amp;quot;杭州&amp;quot;,&amp;quot;枣庄&amp;quot;,&amp;quot;柳州&amp;quot;,&amp;quot;株洲&amp;quot;,&amp;quot;桂林&amp;quot;,&amp;quot;梅州&amp;quot;,&amp;quot;武汉&amp;quot;,&amp;quot;汕头&amp;quot;,&amp;quot;汕尾&amp;quot;,&amp;quot;江门&amp;quot;,&amp;quot;江阴&amp;quot;,&amp;quot;沈阳&amp;quot;,&amp;quot;沧州&amp;quot;,&amp;quot;河源&amp;quot;,&amp;quot;泉州&amp;quot;,&amp;quot;泰安&amp;quot;,&amp;quot;泰州&amp;quot;,&amp;quot;泸州&amp;quot;,&amp;quot;洛阳&amp;quot;,&amp;quot;济南&amp;quot;,&amp;quot;济宁&amp;quot;,&amp;quot;海口&amp;quot;,&amp;quot;海门&amp;quot;,&amp;quot;淄博&amp;quot;,&amp;quot;淮安&amp;quot;,&amp;quot;深圳&amp;quot;,&amp;quot;清远&amp;quot;,&amp;quot;温州&amp;quot;,&amp;quot;渭南&amp;quot;,&amp;quot;湖州&amp;quot;,&amp;quot;湘潭&amp;quot;,&amp;quot;湛江&amp;quot;,&amp;quot;溧阳&amp;quot;,&amp;quot;滨州&amp;quot;,&amp;quot;潍坊&amp;quot;,&amp;quot;潮州&amp;quot;,&amp;quot;烟台&amp;quot;,&amp;quot;焦作&amp;quot;,&amp;quot;牡丹江&amp;quot;,&amp;quot;玉溪&amp;quot;,&amp;quot;珠海&amp;quot;,&amp;quot;瓦房店&amp;quot;,&amp;quot;盐城&amp;quot;,&amp;quot;盘锦&amp;quot;,&amp;quot;石嘴山&amp;quot;,&amp;quot;石家庄&amp;quot;,&amp;quot;福州&amp;quot;,&amp;quot;秦皇岛&amp;quot;,&amp;quot;章丘&amp;quot;,&amp;quot;绍兴&amp;quot;,&amp;quot;绵阳&amp;quot;,&amp;quot;聊城&amp;quot;,&amp;quot;肇庆&amp;quot;,&amp;quot;胶南&amp;quot;,&amp;quot;胶州&amp;quot;,&amp;quot;自贡&amp;quot;,&amp;quot;舟山&amp;quot;,&amp;quot;芜湖&amp;quot;,&amp;quot;苏州&amp;quot;,&amp;quot;茂名&amp;quot;,&amp;quot;荆州&amp;quot;,&amp;quot;荣成&amp;quot;,&amp;quot;莱州&amp;quot;,&amp;quot;莱芜&amp;quot;,&amp;quot;莱西&amp;quot;,&amp;quot;菏泽&amp;quot;,&amp;quot;营口&amp;quot;,&amp;quot;葫芦岛&amp;quot;,&amp;quot;蓬莱&amp;quot;,&amp;quot;衡水&amp;quot;,&amp;quot;衢州&amp;quot;,&amp;quot;西宁&amp;quot;,&amp;quot;西安&amp;quot;,&amp;quot;诸暨&amp;quot;,&amp;quot;贵阳&amp;quot;,&amp;quot;赤峰&amp;quot;,&amp;quot;连云港&amp;quot;,&amp;quot;遵义&amp;quot;,&amp;quot;邢台&amp;quot;,&amp;quot;邯郸&amp;quot;,&amp;quot;郑州&amp;quot;,&amp;quot;鄂尔多斯&amp;quot;,&amp;quot;重庆&amp;quot;,&amp;quot;金华&amp;quot;,&amp;quot;金坛&amp;quot;,&amp;quot;金昌&amp;quot;,&amp;quot;铜川&amp;quot;,&amp;quot;银川&amp;quot;,&amp;quot;锦州&amp;quot;,&amp;quot;镇江&amp;quot;,&amp;quot;长春&amp;quot;,&amp;quot;长沙&amp;quot;,&amp;quot;长治&amp;quot;,&amp;quot;阳江&amp;quot;,&amp;quot;阳泉&amp;quot;,&amp;quot;青岛&amp;quot;,&amp;quot;鞍山&amp;quot;,&amp;quot;韶关&amp;quot;,&amp;quot;马鞍山&amp;quot;,&amp;quot;齐齐哈尔&amp;quot;" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="baidu-site-verification" content="rUUhM5fu05" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/static/ie/html5shiv.js"></script>
+<![endif]-->
+<!--[if lt IE 10]>
+<script type="text/javascript" src="/static/ie/placeholders.jquery.min.js" defer></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="/static/common/style_c2bbd5b.css"/><link rel="stylesheet" type="text/css" href="/static/api/css/style_7eaa50a.css"/></head>
+<body>
+<header id="js-header" class="header " data-token="e088e39c905e368abaed29bff6031a3c">
+<div class="main clearfix">
+
+<a href="/" class="header-logo fl"></a>
+<div class="header-srch fl">
+<input id="header-srch" type="text" class="fl" placeholder="输入关键词搜索" value="" maxlength="50"/>
+<span id="header-srch-btn" class="icon-header-srch fs15 fl">搜索</span>
+<ul class="header-srch-recommend dn" data-srch-recom>
+</ul>
+</div>
+<div class="fr">
+<nav class="nav fl">
+<ul class="header-navi-list clearfix">
+<li class="header-navi-item fl ">
+<a href="/" class="header-link tdn">首页</a>
+</li>
+<li class="header-navi-item fl active">
+<a href="/astore/classificationservicelist" class="header-link tdn">API服务</a>
+</li>
+<li class="header-navi-item fl ">
+<a href="/astore/readyapiprefecture.html" class="header-link tdn" style="color: #fff100;">即用API</a>
+</li>
+<li class="header-navi-item fl ">
+<a href="/astore/toolshttpproxy" class="header-link tdn">调试工具</a>
+</li>
+<li class="header-navi-item fl">
+<a href="http://tieba.baidu.com/f?kw=apistore&ie=utf-8" class="header-link tdn" target="_blank">交流讨论</a>
+</li>
+<li class="header-navi-item fl">
+<div class="user-info fl js-header-dropmenu">
+<a id="js-header-login" href="javascript:void 0" class="info-inner c_fff ml10">登录</a>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<div class="tweet" data-tweet>
+<a href="//tieba.baidu.com/p/3712359662" class="tweet-href" target="_blank">
+</a>
+<i id="tweet-close"></i>
+</div>
+
+<div class="bdsharebuttonbox bdshare-frame">
+<a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a>
+<a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a>
+<a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a>
+<a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a>
+<a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a>
+<a href="#" class="bds_more" data-cmd="more"></a>
+</div>
+<div class="main clearfix">
+<div class="breadcrumb">
+<a href="/astore/classificationservicelist">API列表</a>
+<span class="tip-gt ml5 mr5">&gt;</span>
+<a href="/astore/classificationservicelist/70.html?sortBy=favorite">生活常用</a>
+<span class="tip-gt ml5 mr5">&gt;</span>
+空气质量指数
+</div>
+<section id="js-service-detail" class="service-detail" data="1980">
+<div class="service-header api-record clearfix">
+<div class="api-left-thumb fl">
+<div class="record-thumb">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/503d269759ee3d6d1e31549840166d224e4adeea.jpg?timestamp=1417688718" width="206" height="101" alt="空气质量指数">
+</div>
+</div>
+<div class="api-right-desc fl">
+<div class="record-name-version">
+<span class="service-title" data-service-name="空气质量指数">空气质量指数</span>
+<span class="api-left-static">
+<span class="record-view">13207</span>
+<span id="js-add-follow" class="service-follow " title="收藏"></span>
+<span class="follow-count">38</span>
+<span id="js-basic-comment-count" class="record-comment">22</span>
+</span>
+<a class="dib mt5 ml60" href="http://apistore.baidu.com" target="_blank" data-skipcensus="1">进入官网&nbsp;&gt;&gt;</a>
+</div>
+<div class="record-info clearfix">
+<div class="record-col-1 fl">
+<span class="record-key">服务商：</span>
+<span class="record-value">
+<a class="" href="/astore/shopinfo/814.html" target="_blank">APIStore</a>
+</span>
+</div>
+<div class="record-col-2 fl">
+<span class="record-key">收费情况：</span>
+<span class="record-value">免费</span>
+</div>
+<div class="record-col-2 fl">
+<span class="record-key ml20">认证情况：</span>
+<span class="record-value">无需认证</span>
+</div>
+<div class="record-col-2 fr tr">
+<span class="record-key">是否离线：</span>
+<span class="record-value">在线</span>
+</div>
+</div>
+<div class="record-info clearfix">
+<div class="record-col-3 fl">
+<span class="record-key ml20">支持平台：</span>
+<span class="record-value" title="Web">Web</span>
+</div>
+<div class="record-col-3 fr">
+</div>
+</div>
+</div>
+</div>
+<ul id="js-service-navi-list" class="service-navi-list mt40 tc clearfix">
+<li class="service-navi-item js-navi-item fl active">基本描述</li>
+<li class="service-navi-item js-navi-item fl">API</li>
+<li class="service-navi-item js-navi-item fl ">全部评论</li>
+</ul>
+<div id="js-service-cont-list" class="service-cont-list">
+<div class="service-cont-item js-service-cont-item ">
+<h3 class="lead-title"><span class="lead-cont lead-document">服务简介</span></h3>
+<pre class="basic-intro-desc">空气质量指数能提供实时空气质量情况，目前支持全国161个城市：
+
+&quot;三亚&quot;,&quot;三门峡&quot;,&quot;上海&quot;,&quot;东莞&quot;,&quot;东营&quot;,&quot;中山&quot;,&quot;临安&quot;,&quot;临汾&quot;,&quot;临沂&quot;,&quot;丹东&quot;,&quot;丽水&quot;,&quot;义乌&quot;,&quot;乌鲁木齐&quot;,&quot;九江&quot;,&quot;乳山&quot;,&quot;云浮&quot;,&quot;佛山&quot;,&quot;保定&quot;,&quot;克拉玛依&quot;,&quot;兰州&quot;,&quot;包头&quot;,&quot;北京&quot;,&quot;北海&quot;,&quot;南京&quot;,&quot;南充&quot;,&quot;南宁&quot;,&quot;南昌&quot;,&quot;南通&quot;,&quot;即墨&quot;,&quot;厦门&quot;,&quot;句容&quot;,&quot;台州&quot;,&quot;合肥&quot;,&quot;吉林&quot;,&quot;吴江&quot;,&quot;呼和浩特&quot;,&quot;咸阳&quot;,&quot;哈尔滨&quot;,&quot;唐山&quot;,&quot;嘉兴&quot;,&quot;嘉峪关&quot;,&quot;大同&quot;,&quot;大庆&quot;,&quot;大连&quot;,&quot;天津&quot;,&quot;太仓&quot;,&quot;太原&quot;,&quot;威海&quot;,&quot;宁波&quot;,&quot;安阳&quot;,&quot;宜兴&quot;,&quot;宜宾&quot;,&quot;宜昌&quot;,&quot;宝鸡&quot;,&quot;宿迁&quot;,&quot;富阳&quot;,&quot;寿光&quot;,&quot;岳阳&quot;,&quot;常州&quot;,&quot;常德&quot;,&quot;常熟&quot;,&quot;平度&quot;,&quot;平顶山&quot;,&quot;广州&quot;,&quot;库尔勒&quot;,&quot;廊坊&quot;,&quot;延安&quot;,&quot;开封&quot;,&quot;张家口&quot;,&quot;张家港&quot;,&quot;张家界&quot;,&quot;徐州&quot;,&quot;德州&quot;,&quot;德阳&quot;,&quot;惠州&quot;,&quot;成都&quot;,&quot;扬州&quot;,&quot;承德&quot;,&quot;抚顺&quot;,&quot;拉萨&quot;,&quot;招远&quot;,&quot;揭阳&quot;,&quot;攀枝花&quot;,&quot;文登&quot;,&quot;无锡&quot;,&quot;日照&quot;,&quot;昆山&quot;,&quot;昆明&quot;,&quot;曲靖&quot;,&quot;本溪&quot;,&quot;杭州&quot;,&quot;枣庄&quot;,&quot;柳州&quot;,&quot;株洲&quot;,&quot;桂林&quot;,&quot;梅州&quot;,&quot;武汉&quot;,&quot;汕头&quot;,&quot;汕尾&quot;,&quot;江门&quot;,&quot;江阴&quot;,&quot;沈阳&quot;,&quot;沧州&quot;,&quot;河源&quot;,&quot;泉州&quot;,&quot;泰安&quot;,&quot;泰州&quot;,&quot;泸州&quot;,&quot;洛阳&quot;,&quot;济南&quot;,&quot;济宁&quot;,&quot;海口&quot;,&quot;海门&quot;,&quot;淄博&quot;,&quot;淮安&quot;,&quot;深圳&quot;,&quot;清远&quot;,&quot;温州&quot;,&quot;渭南&quot;,&quot;湖州&quot;,&quot;湘潭&quot;,&quot;湛江&quot;,&quot;溧阳&quot;,&quot;滨州&quot;,&quot;潍坊&quot;,&quot;潮州&quot;,&quot;烟台&quot;,&quot;焦作&quot;,&quot;牡丹江&quot;,&quot;玉溪&quot;,&quot;珠海&quot;,&quot;瓦房店&quot;,&quot;盐城&quot;,&quot;盘锦&quot;,&quot;石嘴山&quot;,&quot;石家庄&quot;,&quot;福州&quot;,&quot;秦皇岛&quot;,&quot;章丘&quot;,&quot;绍兴&quot;,&quot;绵阳&quot;,&quot;聊城&quot;,&quot;肇庆&quot;,&quot;胶南&quot;,&quot;胶州&quot;,&quot;自贡&quot;,&quot;舟山&quot;,&quot;芜湖&quot;,&quot;苏州&quot;,&quot;茂名&quot;,&quot;荆州&quot;,&quot;荣成&quot;,&quot;莱州&quot;,&quot;莱芜&quot;,&quot;莱西&quot;,&quot;菏泽&quot;,&quot;营口&quot;,&quot;葫芦岛&quot;,&quot;蓬莱&quot;,&quot;衡水&quot;,&quot;衢州&quot;,&quot;西宁&quot;,&quot;西安&quot;,&quot;诸暨&quot;,&quot;贵阳&quot;,&quot;赤峰&quot;,&quot;连云港&quot;,&quot;遵义&quot;,&quot;邢台&quot;,&quot;邯郸&quot;,&quot;郑州&quot;,&quot;鄂尔多斯&quot;,&quot;重庆&quot;,&quot;金华&quot;,&quot;金坛&quot;,&quot;金昌&quot;,&quot;铜川&quot;,&quot;银川&quot;,&quot;锦州&quot;,&quot;镇江&quot;,&quot;长春&quot;,&quot;长沙&quot;,&quot;长治&quot;,&quot;阳江&quot;,&quot;阳泉&quot;,&quot;青岛&quot;,&quot;鞍山&quot;,&quot;韶关&quot;,&quot;马鞍山&quot;,&quot;齐齐哈尔&quot;</pre>
+<h3 class="lead-title"><span class="lead-cont lead-flag">特色功能</span></h3>
+<pre class="basic-intro-desc">空气质量指数服务支持以下功能：
+1、实时查询空气质量，小时粒度；
+2、实时给出空气质量AQI指数，并给出空气质量级别和首要污染物；</pre>
+<h3 class="lead-title"><span class="lead-cont lead-pin">推荐服务</span></h3>
+<ul class="service-recommend-list tc clearfix">
+<li class="service-recommend-item fl">
+<a href="/astore/serviceinfo/1798.html" class="recommend-logo">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/2cf5e0fe9925bc3108e777f25ddf8db1cb137025.jpg?timestamp=1423648148" alt="天气查询" class="recommend-pic" width="167" height="82">
+</a>
+<div class="recommend-desc text-overflow-fix">
+<a href="/astore/serviceinfo/1798.html" class="recommend-name" title="天气查询">天气查询</a>
+</div>
+</li>
+<li class="service-recommend-item fl">
+<a href="/astore/serviceinfo/1979.html" class="recommend-logo">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/95eef01f3a292df54dbc7e46bf315c6034a87362.jpg?timestamp=1416910294" alt="身份证查询" class="recommend-pic" width="167" height="82">
+</a>
+<div class="recommend-desc text-overflow-fix">
+<a href="/astore/serviceinfo/1979.html" class="recommend-name" title="身份证查询">身份证查询</a>
+</div>
+</li>
+<li class="service-recommend-item fl">
+<a href="/astore/serviceinfo/1840.html" class="recommend-logo">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/242dd42a2834349b0d7118efcaea15ce36d3be60.jpg?timestamp=1414994802" alt="IP地址查询" class="recommend-pic" width="167" height="82">
+</a>
+<div class="recommend-desc text-overflow-fix">
+<a href="/astore/serviceinfo/1840.html" class="recommend-name" title="IP地址查询">IP地址查询</a>
+</div>
+</li>
+<li class="service-recommend-item fl">
+<a href="/astore/serviceinfo/1799.html" class="recommend-logo">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/6a63f6246b600c33840ea8a2194c510fd9f9a160.jpg?timestamp=1419235685" alt="手机号码归属地查询" class="recommend-pic" width="167" height="82">
+</a>
+<div class="recommend-desc text-overflow-fix">
+<a href="/astore/serviceinfo/1799.html" class="recommend-name" title="手机号码归属地查询">手机号码归属地查询</a>
+</div>
+</li>
+<li class="service-recommend-item fl">
+<a href="/astore/serviceinfo/2008.html" class="recommend-logo">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/f3d3572c11dfa9ece4f9dbaf61d0f703908fc1b7.jpg?timestamp=1419996279" alt="图灵机器人" class="recommend-pic" width="167" height="82">
+</a>
+<div class="recommend-desc text-overflow-fix">
+<a href="/astore/serviceinfo/2008.html" class="recommend-name" title="图灵机器人">图灵机器人</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="service-cont-item js-service-cont-item dn">
+<h3 class="lead-title"><span class="lead-cont lead-document">API列表</span></h3>
+<dl id="js-interface-list" class="interface-list">
+<dt class="interface-item">
+<h4 class="interface-name js-name">
+<a href="/astore/toolshttpproxy?apiId=%B9%C9%BA" class="fr fwn" target="_blank">去调试&nbsp;&gt;&gt;</a>
+<i class="caret caret-up" caret-b-000></i>
+空气质量指数查询
+</h4>
+<div class="interface-detail db js-detail">
+<p class="interface-line"><strong>接口地址：</strong>http://apistore.baidu.com/microservice/aqi</p>
+<p class="interface-line"><strong>请求方法：</strong>GET</p>
+<div class="interface-line">
+<strong class="db mb10">请求参数：</strong>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>必填</th>
+<th>参数位置</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="td-1">city</td>
+<td class="td-2">string</td>
+<td class="td-3">是</td>
+<td class="td-4">urlParam</td>
+<td class="td-5">城市名，具体支持城市请查看基本介绍</td>
+<td class="td-6">北京</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="interface-line">
+<strong class="db mb10">请求示例：</strong>
+<pre>http://apistore.baidu.com/microservice/aqi?city=北京</pre>
+</div>
+<div class="interface-line">
+<strong class="db mb10">JSON返回示例：</strong>
+<pre>{
+    errNum: 0, //非0表示失败
+    retMsg: &quot;success&quot;,
+    retData: {
+    city: &quot;北京&quot;, //城市，支持城市列表，请参考基本信息说明
+    time: &quot;2014-12-04T13:00:00Z&quot;, //数据采集时间
+    aqi: 38,  //空气质量指数
+    level: &quot;优&quot;, //空气等级
+    core: &quot;&quot; //首要污染物
+    }
+}</pre>
+</div>
+<div class="interface-line">
+<strong>API调试工具：</strong>
+<a href="/astore/toolshttpproxy?apiId=%B9%C9%BA" target="_blank">去调试&nbsp;&gt;&gt;</a>
+</div>
+</div>
+</dt>
+</dl>
+<h3 class="lead-title"><span class="lead-cont lead-pin">推荐服务</span></h3>
+<ul class="service-recommend-list tc clearfix">
+<li class="service-recommend-item fl">
+<a href="/astore/serviceinfo/1798.html" class="recommend-logo">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/2cf5e0fe9925bc3108e777f25ddf8db1cb137025.jpg?timestamp=1423648148" alt="天气查询" class="recommend-pic" width="167" height="82">
+</a>
+<div class="recommend-desc text-overflow-fix">
+<a href="/astore/serviceinfo/1798.html" class="recommend-name" title="天气查询">天气查询</a>
+</div>
+</li>
+<li class="service-recommend-item fl">
+<a href="/astore/serviceinfo/1979.html" class="recommend-logo">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/95eef01f3a292df54dbc7e46bf315c6034a87362.jpg?timestamp=1416910294" alt="身份证查询" class="recommend-pic" width="167" height="82">
+</a>
+<div class="recommend-desc text-overflow-fix">
+<a href="/astore/serviceinfo/1979.html" class="recommend-name" title="身份证查询">身份证查询</a>
+</div>
+</li>
+<li class="service-recommend-item fl">
+<a href="/astore/serviceinfo/1840.html" class="recommend-logo">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/242dd42a2834349b0d7118efcaea15ce36d3be60.jpg?timestamp=1414994802" alt="IP地址查询" class="recommend-pic" width="167" height="82">
+</a>
+<div class="recommend-desc text-overflow-fix">
+<a href="/astore/serviceinfo/1840.html" class="recommend-name" title="IP地址查询">IP地址查询</a>
+</div>
+</li>
+<li class="service-recommend-item fl">
+<a href="/astore/serviceinfo/1799.html" class="recommend-logo">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/6a63f6246b600c33840ea8a2194c510fd9f9a160.jpg?timestamp=1419235685" alt="手机号码归属地查询" class="recommend-pic" width="167" height="82">
+</a>
+<div class="recommend-desc text-overflow-fix">
+<a href="/astore/serviceinfo/1799.html" class="recommend-name" title="手机号码归属地查询">手机号码归属地查询</a>
+</div>
+</li>
+<li class="service-recommend-item fl">
+<a href="/astore/serviceinfo/2008.html" class="recommend-logo">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/f3d3572c11dfa9ece4f9dbaf61d0f703908fc1b7.jpg?timestamp=1419996279" alt="图灵机器人" class="recommend-pic" width="167" height="82">
+</a>
+<div class="recommend-desc text-overflow-fix">
+<a href="/astore/serviceinfo/2008.html" class="recommend-name" title="图灵机器人">图灵机器人</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="service-cont-item js-service-cont-item dn">
+<section id="js-add-comment-block" class="add-comment-block">
+<span class="db mt20 mb10">大家在评价</span>
+<ul id="js-comment-tag-good" class="comment-tag-list clearfix"></ul>
+<ul id="js-comment-tag-bad" class="comment-tag-list mt10 clearfix"></ul>
+<span class="db mt20 mb10">写评论</span>
+<textarea id="js-user-comment" class="comment-area" maxlength="500"></textarea>
+<div class="comment-opt clearfix">
+<span id="js-add-comment-btn" class="opt-btn btn-blue add-comment-btn fr">发表评论</span>
+<span id="js-add-comment-error" class="error fl"></span>
+</div>
+</section>
+<section class="comment-list-block">
+<div class="comment-list-title">共<span id="js-comment-count">0</span>条评论</div>
+<ul id="js-comment-list" class="comment-list"></ul>
+<div id="js-pager" class="pager tc"></div>
+</section>
+<h3 class="lead-title"><span class="lead-cont lead-pin">推荐服务</span></h3>
+<ul class="service-recommend-list tc clearfix">
+<li class="service-recommend-item fl">
+<a href="/astore/serviceinfo/1798.html" class="recommend-logo">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/2cf5e0fe9925bc3108e777f25ddf8db1cb137025.jpg?timestamp=1423648148" alt="天气查询" class="recommend-pic" width="167" height="82">
+</a>
+<div class="recommend-desc text-overflow-fix">
+<a href="/astore/serviceinfo/1798.html" class="recommend-name" title="天气查询">天气查询</a>
+</div>
+</li>
+<li class="service-recommend-item fl">
+<a href="/astore/serviceinfo/1979.html" class="recommend-logo">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/95eef01f3a292df54dbc7e46bf315c6034a87362.jpg?timestamp=1416910294" alt="身份证查询" class="recommend-pic" width="167" height="82">
+</a>
+<div class="recommend-desc text-overflow-fix">
+<a href="/astore/serviceinfo/1979.html" class="recommend-name" title="身份证查询">身份证查询</a>
+</div>
+</li>
+<li class="service-recommend-item fl">
+<a href="/astore/serviceinfo/1840.html" class="recommend-logo">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/242dd42a2834349b0d7118efcaea15ce36d3be60.jpg?timestamp=1414994802" alt="IP地址查询" class="recommend-pic" width="167" height="82">
+</a>
+<div class="recommend-desc text-overflow-fix">
+<a href="/astore/serviceinfo/1840.html" class="recommend-name" title="IP地址查询">IP地址查询</a>
+</div>
+</li>
+<li class="service-recommend-item fl">
+<a href="/astore/serviceinfo/1799.html" class="recommend-logo">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/6a63f6246b600c33840ea8a2194c510fd9f9a160.jpg?timestamp=1419235685" alt="手机号码归属地查询" class="recommend-pic" width="167" height="82">
+</a>
+<div class="recommend-desc text-overflow-fix">
+<a href="/astore/serviceinfo/1799.html" class="recommend-name" title="手机号码归属地查询">手机号码归属地查询</a>
+</div>
+</li>
+<li class="service-recommend-item fl">
+<a href="/astore/serviceinfo/2008.html" class="recommend-logo">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/f3d3572c11dfa9ece4f9dbaf61d0f703908fc1b7.jpg?timestamp=1419996279" alt="图灵机器人" class="recommend-pic" width="167" height="82">
+</a>
+<div class="recommend-desc text-overflow-fix">
+<a href="/astore/serviceinfo/2008.html" class="recommend-name" title="图灵机器人">图灵机器人</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+<footer id="js-footer" class="footer">
+<div class="footer-inner main clearfix">
+<dl class="fl footer-links">
+<dt class="footer-dt">API Store</dt>
+<dd><a class="footer-link" href="/astore/help" target="_blank">关于我们</a></dd>
+<dd><a class="footer-link" href="/astore/help?tag=join" target="_blank">加入我们</a></dd>
+<dd><a class="footer-link" href="/astore/help?tag=tos" target="_blank">服务条款</a></dd>
+</dl>
+<div class="footer-seperator fl"></div>
+<dl class="fl footer-contact">
+<dt  class="footer-dt">联系我们</dt>
+<dd>
+<span class="footer-link">客服邮箱：</span>
+<a class="footer-contact-link" href="mailto:apistore@baidu.com">apistore@baidu.com</a>
+</dd>
+<dd>
+<span class="footer-link">开发者交流QQ群：</span>
+<span class="footer-contact-link">206417017</span>
+</dd>
+<dd>
+<span class="footer-link">贴吧：</span>
+<a class="footer-contact-link" href="//tieba.baidu.com/f?ie=utf-8&kw=apistore&fr=search" target="_blank">API Store官方贴吧</a>
+</dd>
+</dl>
+<div class="footer-seperator fl"></div>
+<dl class="fl footer-qr">
+<div class="qr-wechat"></div>
+</dl>
+</div>
+<ul id="js-scroll-bar" class="scroll-bar">
+<li id="js-backtop" class="scroll-bar-item dn">
+<a href="javascript:void 0" class="bar-link bar-backtop">
+<span class="bar-link-pri"></span>
+<span class="bar-link-sub">返回</br>顶部</span>
+</a>
+</li>
+<li id="js-add-service" class="scroll-bar-item">
+<a href="/astore/serviceadd" class="bar-link bar-add bar-add-hover" target="_blank">
+<span class="bar-link-pri"></span>
+<span class="bar-link-sub">申请</br>服务</span>
+</a>
+</li>
+<li id="js-recommend-service" class="scroll-bar-item">
+<a href="javascript:void 0" class="bar-link bar-recommend">
+<span class="bar-link-pri"></span>
+<span class="bar-link-sub">推荐</br>服务</span>
+</a>
+</li>
+<li id="js-connect-us" class="scroll-bar-item">
+<a href="javascript:void 0" class="bar-link bar-connect">
+<span class="bar-link-pri"></span>
+<span class="bar-link-sub">联系</br>官方</span>
+</a>
+</li>
+</ul>
+<div id="footer_feedback" class="bar-link bar-feedback">
+<span class="bar-link-pri"></span>
+<span class="bar-link-sub">意见</br>反馈</span>
+</div>
+</footer>
+
+<script type="text/javascript" src="http://passport.bdimg.com/passApi/js/uni_login_wrapper.js?cdnversion=201504301717"></script>
+</body><script type="text/javascript" src="/static/common/pkg/static.all_363d92f.js"></script>
+<script type="text/javascript">require.resourceMap({"res":{"api:static/js/modules/detail.js":{"url":"/static/api/js/modules/detail_41c88ad.js","deps":["common:static/js/modules/util.js"]}}});</script><script type="text/javascript" src="/static/common/js/modules/util_327ec71.js"></script>
+<script type="text/javascript" src="/static/api/widget/detail/api_e4d0ddf.js"></script>
+<script type="text/javascript" src="/static/api/widget/detail/comment_2acc5e1.js"></script>
+<script type="text/javascript">!function(){            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?6d83f082b8fe8f41ecc67eba5509d6e9";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+        }();
+!function(){	var header = require('common:widget/header/header.js');
+	header.init();
+}();
+!function(){    require.async(["api:widget/detail/api.js"], function(mod){
+          mod.init();
+    });
+}();
+!function(){    require.async(["api:widget/detail/comment.js"], function(mod){
+          mod.init();
+    });
+}();
+!function(){    require.async(["api:static/js/modules/detail.js"], function(mod){
+          mod.init();
+    });
+}();
+!function(){    require.async(["common:widget/footer/footer.js"], function(mod){
+        mod.init();
+    });
+
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6d83f082b8fe8f41ecc67eba5509d6e9' type='text/javascript'%3E%3C/script%3E"));
+	var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254393647'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254393647' type='text/javascript'%3E%3C/script%3E"));
+}();</script></html><!--10435953780924147210043017-->
+<script> var _trace_page_logid = 1043595378; </script><!--10467917360739532298043017-->
+<script> var _trace_page_logid = 1046791736; </script>

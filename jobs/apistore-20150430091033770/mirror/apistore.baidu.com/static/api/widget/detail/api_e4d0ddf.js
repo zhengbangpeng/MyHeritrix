@@ -1,0 +1,1 @@
+define("api:widget/detail/api.js",function(s,a){a.init=function(){$("#js-interface-list").on("click",".js-name",function(){var s=$(this),a=s.find(".caret"),e=a.hasClass("caret-up"),i=s.siblings(".js-detail");e?(a.removeClass("caret-up").addClass("caret-down"),i.slideUp("fast")):(a.removeClass("caret-down").addClass("caret-up"),i.slideDown("slow"))})}});

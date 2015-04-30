@@ -1,0 +1,1 @@
+define("help:static/js/modules/help.js",function(s,i){i.init=function(){$("#js-aside").on("click",".js-navi-item",function(){var s=$(this),i=s.hasClass("active"),e=s.index(),a=$("#js-cont-list .js-cont-item");i||(s.addClass("active").siblings().removeClass("active"),a.eq(e).addClass("active").siblings().removeClass("active"))})}});

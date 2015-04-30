@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<html class="expanded" lang="zh">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<title>API服务_API Store</title>
+<meta name="keywords" content="API服务，SDK" />
+<meta name="description" content="API Store，为开发者提供最全面的API服务，汇集了国内外应用开发所需要的Android API/SDK，IOS SDK，涉及设计开发，运维管理，云服务，app推广，数据服务等多个范畴的服务，旨在向开发者提供最全面，最便捷的API搜索服务。" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="baidu-site-verification" content="rUUhM5fu05" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/static/ie/html5shiv.js"></script>
+<![endif]-->
+<!--[if lt IE 10]>
+<script type="text/javascript" src="/static/ie/placeholders.jquery.min.js" defer></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="/static/common/style_c2bbd5b.css"/><link rel="stylesheet" type="text/css" href="/static/api/css/style_7eaa50a.css"/><link rel="stylesheet" type="text/css" href="/static/api/widget/menu/menu_270db1b.css"/></head>
+<body>
+<header id="js-header" class="header " data-token="e088e39c905e368abaed29bff6031a3c">
+<div class="main clearfix">
+
+<a href="/" class="header-logo fl"></a>
+<div class="header-srch fl">
+<input id="header-srch" type="text" class="fl" placeholder="输入关键词搜索" value="" maxlength="50"/>
+<span id="header-srch-btn" class="icon-header-srch fs15 fl">搜索</span>
+<ul class="header-srch-recommend dn" data-srch-recom>
+</ul>
+</div>
+<div class="fr">
+<nav class="nav fl">
+<ul class="header-navi-list clearfix">
+<li class="header-navi-item fl ">
+<a href="/" class="header-link tdn">首页</a>
+</li>
+<li class="header-navi-item fl active">
+<a href="/astore/classificationservicelist" class="header-link tdn">API服务</a>
+</li>
+<li class="header-navi-item fl ">
+<a href="/astore/readyapiprefecture.html" class="header-link tdn" style="color: #fff100;">即用API</a>
+</li>
+<li class="header-navi-item fl ">
+<a href="/astore/toolshttpproxy" class="header-link tdn">调试工具</a>
+</li>
+<li class="header-navi-item fl">
+<a href="http://tieba.baidu.com/f?kw=apistore&ie=utf-8" class="header-link tdn" target="_blank">交流讨论</a>
+</li>
+<li class="header-navi-item fl">
+<div class="user-info fl js-header-dropmenu">
+<a id="js-header-login" href="javascript:void 0" class="info-inner c_fff ml10">登录</a>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<div class="tweet" data-tweet>
+<a href="//tieba.baidu.com/p/3712359662" class="tweet-href" target="_blank">
+</a>
+<i id="tweet-close"></i>
+</div>
+
+<div class="main clearfix list-page">
+<nav id="js-aside" class="aside fl">
+<ul class="navi-list">
+<li class="navi-item active pr " style="background-image: url(http://hiphotos.baidu.com/apistore/pic/item/34fae6cd7b899e5110f3ccaf41a7d933c8950d0f.jpg?timestamp=1419563241)" data-primary-navi>
+<h3 class="navi-title js-navi-title">应用开发</h3>
+<ul class="second-navi-list clearfix js-second-list ">
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/21.html" class="navi-link text-overflow-fix " data="21">推送(19)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/22.html" class="navi-link text-overflow-fix " data="22">地图(13)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/23.html" class="navi-link text-overflow-fix " data="23">社交分享(17)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/24.html" class="navi-link text-overflow-fix " data="24">即时通讯(16)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/25.html" class="navi-link text-overflow-fix " data="25">游戏引擎(28)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/26.html" class="navi-link text-overflow-fix " data="26">语音识别(12)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/27.html" class="navi-link text-overflow-fix " data="27">游戏开放平台(19)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/28.html" class="navi-link text-overflow-fix " data="28">服务类API(31)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/29.html" class="navi-link text-overflow-fix " data="29">快速开发(54)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/30.html" class="navi-link text-overflow-fix " data="30">支付平台(22)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/31.html" class="navi-link text-overflow-fix " data="31">第三方登录(9)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/32.html" class="navi-link text-overflow-fix " data="32">人脸识别(9)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/33.html" class="navi-link text-overflow-fix " data="33">二维码(7)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/34.html" class="navi-link text-overflow-fix " data="34">多媒体(6)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/35.html" class="navi-link text-overflow-fix " data="35">增强现实(6)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/36.html" class="navi-link text-overflow-fix " data="36">视觉设计(5)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/37.html" class="navi-link text-overflow-fix " data="37">原型设计(10)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/38.html" class="navi-link text-overflow-fix " data="38">翻译(5)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/39.html" class="navi-link text-overflow-fix " data="39">短信平台(21)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/40.html" class="navi-link text-overflow-fix " data="40">输入法(4)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/41.html" class="navi-link text-overflow-fix " data="41">工具类(24)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/42.html" class="navi-link text-overflow-fix " data="42">开发学习(9)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/43.html" class="navi-link text-overflow-fix " data="43">其它开发(20)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/78.html" class="navi-link text-overflow-fix " data="78">近场通信(1)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/79.html" class="navi-link text-overflow-fix " data="79">邮件服务(3)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/80.html" class="navi-link text-overflow-fix " data="80">开发组件(8)</a>
+</li>
+</ul>
+</li>
+<li class="navi-item  pr " style="background-image: url(http://hiphotos.baidu.com/apistore/pic/item/9825bc315c6034a8882c4e3ac8134954082376bb.jpg?timestamp=1419563272)" data-primary-navi>
+<h3 class="navi-title js-navi-title">运维管理</h3>
+<ul class="second-navi-list clearfix js-second-list ">
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/44.html" class="navi-link text-overflow-fix " data="44">应用加密(5)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/45.html" class="navi-link text-overflow-fix " data="45">统计分析(35)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/46.html" class="navi-link text-overflow-fix " data="46">数据可视化(6)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/47.html" class="navi-link text-overflow-fix " data="47">影响力评估(5)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/48.html" class="navi-link text-overflow-fix " data="48">性能测试(20)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/49.html" class="navi-link text-overflow-fix " data="49">其它运维(7)</a>
+</li>
+</ul>
+</li>
+<li class="navi-item  pr " style="background-image: url(http://hiphotos.baidu.com/apistore/pic/item/b03533fa828ba61e4bea36944234970a304e5901.jpg?timestamp=1419565791)" data-primary-navi>
+<h3 class="navi-title js-navi-title">云服务</h3>
+<ul class="second-navi-list clearfix js-second-list ">
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/50.html" class="navi-link text-overflow-fix " data="50">云计算(29)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/51.html" class="navi-link text-overflow-fix " data="51">云存储(37)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/52.html" class="navi-link text-overflow-fix " data="52">云引擎(7)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/53.html" class="navi-link text-overflow-fix " data="53">云测试(10)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/54.html" class="navi-link text-overflow-fix " data="54">云媒体(3)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/55.html" class="navi-link text-overflow-fix " data="55">其它云(15)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/76.html" class="navi-link text-overflow-fix " data="76">云推荐(2)</a>
+</li>
+</ul>
+</li>
+<li class="navi-item  pr " style="background-image: url(http://hiphotos.baidu.com/apistore/pic/item/0d338744ebf81a4c2f861272d42a6059242da6d1.jpg?timestamp=1419565826)" data-primary-navi>
+<h3 class="navi-title js-navi-title">市场营销</h3>
+<ul class="second-navi-list clearfix js-second-list ">
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/56.html" class="navi-link text-overflow-fix " data="56">广告平台(59)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/57.html" class="navi-link text-overflow-fix " data="57">广告聚合平台(6)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/58.html" class="navi-link text-overflow-fix " data="58">应用市场(48)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/59.html" class="navi-link text-overflow-fix " data="59">APP推广(16)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/60.html" class="navi-link text-overflow-fix " data="60">其它推广(9)</a>
+</li>
+</ul>
+</li>
+<li class="navi-item  pr last-item" style="background-image: url(http://hiphotos.baidu.com/apistore/pic/item/c2fdfc039245d688d4b24c1fa7c27d1ed31b24dc.jpg?timestamp=1419565840)" data-primary-navi>
+<h3 class="navi-title js-navi-title">数据服务</h3>
+<ul class="second-navi-list clearfix js-second-list last-navi-list">
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/70.html" class="navi-link text-overflow-fix " data="70">生活常用(59)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/71.html" class="navi-link text-overflow-fix " data="71">位置信息(9)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/72.html" class="navi-link text-overflow-fix " data="72">金融理财(10)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/73.html" class="navi-link text-overflow-fix " data="73">影视娱乐(5)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/74.html" class="navi-link text-overflow-fix " data="74">全网数据(4)</a>
+</li>
+<li class="second-navi-item fl">
+<a href="/astore/classificationservicelist/75.html" class="navi-link text-overflow-fix " data="75">其他数据(5)</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="js-content" class="content fl">
+<div id="js-service-opt" class="module-name mt10 clearfix pr">
+<a class="srch-sort  fr ml10" href="/astore/classificationservicelist" data-srch-sort data-type="commentCount">评论数</a>
+<a class="srch-sort  fr ml10" href="/astore/classificationservicelist" data-srch-sort data-type="followedCount">收藏数</a>
+<a class="srch-sort  fr ml10" href="/astore/classificationservicelist" data-srch-sort data-type="accessCount">访问量</a>
+<a class="srch-sort active fr" href="/astore/classificationservicelist" data-srch-sort data-type="default">综合排序</a>
+<div class="advanced-select fr">
+<span class="pro-title" data-pro-select>高级筛选</span>
+<form class="pro-select-list" data-pro-select-list>
+<div class="pro-select-item">
+<span class="pro-select-label">是否免费：</span>
+<label class="form-label"><input type="checkbox" class="form-checkbox" name="select-free" value="1">免费</label>
+<label class="form-label"><input type="checkbox" class="form-checkbox" name="select-free" value="0">收费</label>
+</div>
+<div class="pro-select-item">
+<span class="pro-select-label">是否需要认证：</span>
+<label class="form-label"><input type="checkbox" class="form-checkbox" name="select-auth" value="1">需要</label>
+<label class="form-label"><input type="checkbox" class="form-checkbox" name="select-auth" value="0">不需要</label>
+</div>
+<div class="pro-select-item">
+<span class="pro-select-label">支持平台：</span>
+<label class="form-label"><input type="checkbox" class="form-checkbox" name="select-platform" value="Android">Android</label>
+<label class="form-label"><input type="checkbox" class="form-checkbox" name="select-platform" value="IOS">IOS</label>
+<label class="form-label"><input type="checkbox" class="form-checkbox" name="select-platform" value="Windows Phone">Windows Phone</label>
+<label class="form-label"><input type="checkbox" class="form-checkbox" name="select-platform" value="Windows">Windows</label>
+<span class="pro-select-label">&nbsp;&nbsp;</span>
+<label class="form-label"><input type="checkbox" class="form-checkbox" name="select-platform" value="Linux">Linux</label>
+<label class="form-label"><input type="checkbox" class="form-checkbox" name="select-platform" value="Web">Web</label>
+</div>
+<div class="pro-select-item">
+<span class="pro-select-label">&nbsp;&nbsp;</span>
+<span class="opt-btn btn-small-flex btn-blue" data-srch-btn>确定</span>
+<button type="reset" class="opt-btn btn-small-flex btn-gray ml20">清空</button>
+</div>
+</form>
+</div>
+<span class="module-name-title">
+共找到服务（702个）</span>
+</div>
+<ul class="api-list">
+<li class="api-record clearfix">
+<div class="api-left-thumb fl tc">
+<a class="record-thumb" href="/astore/serviceinfo/1483.html" target="_blank">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/b2de9c82d158ccbf0f04c3501ad8bc3eb135411b.jpg?timestamp=1414994793" width="206" height="101" alt="中国IT公开课排行榜">
+</a>
+</div>
+<div class="api-right-detail fl">
+<h3 class="record-name-version">
+<a href="/astore/serviceinfo/1483.html" class="api-link" target="_blank" title="中国IT公开课排行榜">中国IT公开课排行榜</a>
+</h3>
+<div class="clearfix">
+<div class="fl record-statistic">
+<div class="c_999">
+<span class="record-statistic-item">访问量：7675</span>
+<span class="record-statistic-item">收藏数：23</span>
+<span class="record-statistic-item">评论数：13</span>
+</div>
+<div class="mt5">支持平台：IOS | Android | Linux | Windows | Windows Phone</div>
+</div>
+<div class="fr record-required">
+<span class="record-required-item record-free active">免费</span>
+<span class="record-required-item record-auth mt5 ">无需认证</span>
+</div>
+</div>
+</div>
+</li>
+<li class="api-record clearfix">
+<div class="api-left-thumb fl tc">
+<a class="record-thumb" href="/astore/serviceinfo/27407.html" target="_blank">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/4b90f603738da977652a1bb2b351f8198618e326.jpg?timestamp=1421122556" width="206" height="101" alt="叮当APP自助生产运营平台">
+</a>
+</div>
+<div class="api-right-detail fl">
+<h3 class="record-name-version">
+<a href="/astore/serviceinfo/27407.html" class="api-link" target="_blank" title="叮当APP自助生产运营平台">叮当APP自助生产运营平台</a>
+</h3>
+<div class="clearfix">
+<div class="fl record-statistic">
+<div class="c_999">
+<span class="record-statistic-item">访问量：1411</span>
+<span class="record-statistic-item">收藏数：11</span>
+<span class="record-statistic-item">评论数：26</span>
+</div>
+<div class="mt5">支持平台：IOS | Android</div>
+</div>
+<div class="fr record-required">
+<span class="record-required-item record-free active">免费</span>
+<span class="record-required-item record-auth mt5 ">无需认证</span>
+</div>
+</div>
+</div>
+</li>
+<li class="api-record clearfix">
+<div class="api-left-thumb fl tc">
+<a class="record-thumb" href="/astore/serviceinfo/2039.html" target="_blank">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/b7fd5266d01609246c9983a0d70735fae7cd34c8.jpg?timestamp=1427782980" width="206" height="101" alt="宅言API">
+</a>
+</div>
+<div class="api-right-detail fl">
+<h3 class="record-name-version">
+<a href="/astore/serviceinfo/2039.html" class="api-link" target="_blank" title="宅言API">宅言API</a>
+</h3>
+<div class="clearfix">
+<div class="fl record-statistic">
+<div class="c_999">
+<span class="record-statistic-item">访问量：5781</span>
+<span class="record-statistic-item">收藏数：21</span>
+<span class="record-statistic-item">评论数：13</span>
+</div>
+<div class="mt5">支持平台：IOS | Web</div>
+</div>
+<div class="fr record-required">
+<span class="record-required-item record-free active">免费</span>
+<span class="record-required-item record-auth mt5 ">无需认证</span>
+</div>
+</div>
+</div>
+</li>
+<li class="api-record clearfix">
+<div class="api-left-thumb fl tc">
+<a class="record-thumb" href="/astore/serviceinfo/1363.html" target="_blank">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/574e9258d109b3defcc59202cfbf6c81800a4c65.jpg?timestamp=1414994789" width="206" height="101" alt="万普世纪广告">
+</a>
+</div>
+<div class="api-right-detail fl">
+<h3 class="record-name-version">
+<a href="/astore/serviceinfo/1363.html" class="api-link" target="_blank" title="万普世纪广告">万普世纪广告</a>
+</h3>
+<div class="clearfix">
+<div class="fl record-statistic">
+<div class="c_999">
+<span class="record-statistic-item">访问量：1990</span>
+<span class="record-statistic-item">收藏数：22</span>
+<span class="record-statistic-item">评论数：11</span>
+</div>
+<div class="mt5">支持平台：IOS | Android</div>
+</div>
+<div class="fr record-required">
+<span class="record-required-item record-free active">免费</span>
+<span class="record-required-item record-auth mt5 ">无需认证</span>
+</div>
+</div>
+</div>
+</li>
+<li class="api-record clearfix">
+<div class="api-left-thumb fl tc">
+<a class="record-thumb" href="/astore/serviceinfo/1552.html" target="_blank">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/b64543a98226cffca492c9d8ba014a90f603ea24.jpg?timestamp=1414994795" width="206" height="101" alt="FIR.im">
+</a>
+</div>
+<div class="api-right-detail fl">
+<h3 class="record-name-version">
+<a href="/astore/serviceinfo/1552.html" class="api-link" target="_blank" title="FIR.im">FIR.im</a>
+</h3>
+<div class="clearfix">
+<div class="fl record-statistic">
+<div class="c_999">
+<span class="record-statistic-item">访问量：1343</span>
+<span class="record-statistic-item">收藏数：15</span>
+<span class="record-statistic-item">评论数：13</span>
+</div>
+<div class="mt5">支持平台：IOS | Android</div>
+</div>
+<div class="fr record-required">
+<span class="record-required-item record-free active">免费</span>
+<span class="record-required-item record-auth mt5 ">无需认证</span>
+</div>
+</div>
+</div>
+</li>
+<li class="api-record clearfix">
+<div class="api-left-thumb fl tc">
+<a class="record-thumb" href="/astore/serviceinfo/1551.html" target="_blank">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/7a899e510fb30f24e3ef9a69cb95d143ad4b0366.jpg?timestamp=1421909277" width="206" height="101" alt="云巴消息推送">
+</a>
+</div>
+<div class="api-right-detail fl">
+<h3 class="record-name-version">
+<a href="/astore/serviceinfo/1551.html" class="api-link" target="_blank" title="云巴消息推送">云巴消息推送</a>
+</h3>
+<div class="clearfix">
+<div class="fl record-statistic">
+<div class="c_999">
+<span class="record-statistic-item">访问量：2375</span>
+<span class="record-statistic-item">收藏数：24</span>
+<span class="record-statistic-item">评论数：10</span>
+</div>
+<div class="mt5">支持平台：IOS | Android | Web</div>
+</div>
+<div class="fr record-required">
+<span class="record-required-item record-free active">免费</span>
+<span class="record-required-item record-auth mt5 active">需要认证</span>
+</div>
+</div>
+</div>
+</li>
+<li class="api-record clearfix">
+<div class="api-left-thumb fl tc">
+<a class="record-thumb" href="/astore/serviceinfo/1850.html" target="_blank">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/32fa828ba61ea8d39198026e940a304e251f5825.jpg?timestamp=1414994802" width="206" height="101" alt="实时IP代理库">
+</a>
+</div>
+<div class="api-right-detail fl">
+<h3 class="record-name-version">
+<a href="/astore/serviceinfo/1850.html" class="api-link" target="_blank" title="实时IP代理库">实时IP代理库</a>
+</h3>
+<div class="clearfix">
+<div class="fl record-statistic">
+<div class="c_999">
+<span class="record-statistic-item">访问量：40838</span>
+<span class="record-statistic-item">收藏数：16</span>
+<span class="record-statistic-item">评论数：11</span>
+</div>
+<div class="mt5">支持平台：IOS | Android | Web</div>
+</div>
+<div class="fr record-required">
+<span class="record-required-item record-free ">收费</span>
+<span class="record-required-item record-auth mt5 active">需要认证</span>
+</div>
+</div>
+</div>
+</li>
+<li class="api-record clearfix">
+<div class="api-left-thumb fl tc">
+<a class="record-thumb" href="/astore/serviceinfo/1998.html" target="_blank">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/1e30e924b899a9014b607d781e950a7b0208f522.jpg?timestamp=1419820975" width="206" height="101" alt="川道短信接口">
+</a>
+</div>
+<div class="api-right-detail fl">
+<h3 class="record-name-version">
+<a href="/astore/serviceinfo/1998.html" class="api-link" target="_blank" title="川道短信接口">川道短信接口</a>
+</h3>
+<div class="clearfix">
+<div class="fl record-statistic">
+<div class="c_999">
+<span class="record-statistic-item">访问量：3869</span>
+<span class="record-statistic-item">收藏数：10</span>
+<span class="record-statistic-item">评论数：16</span>
+</div>
+<div class="mt5">支持平台：IOS | Android | Windows | Linux</div>
+</div>
+<div class="fr record-required">
+<span class="record-required-item record-free ">收费</span>
+<span class="record-required-item record-auth mt5 active">需要认证</span>
+</div>
+</div>
+</div>
+</li>
+<li class="api-record clearfix">
+<div class="api-left-thumb fl tc">
+<a class="record-thumb" href="/astore/serviceinfo/1330.html" target="_blank">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/c8ea15ce36d3d539c907e2833987e950352ab0bc.jpg?timestamp=1417144331" width="206" height="101" alt="亲加语音通讯云">
+</a>
+</div>
+<div class="api-right-detail fl">
+<h3 class="record-name-version">
+<a href="/astore/serviceinfo/1330.html" class="api-link" target="_blank" title="亲加语音通讯云">亲加语音通讯云</a>
+</h3>
+<div class="clearfix">
+<div class="fl record-statistic">
+<div class="c_999">
+<span class="record-statistic-item">访问量：2962</span>
+<span class="record-statistic-item">收藏数：15</span>
+<span class="record-statistic-item">评论数：11</span>
+</div>
+<div class="mt5">支持平台：IOS | Android | Web</div>
+</div>
+<div class="fr record-required">
+<span class="record-required-item record-free active">免费</span>
+<span class="record-required-item record-auth mt5 active">需要认证</span>
+</div>
+</div>
+</div>
+</li>
+<li class="api-record clearfix">
+<div class="api-left-thumb fl tc">
+<a class="record-thumb" href="/astore/serviceinfo/1940.html" target="_blank">
+<img src="http://hiphotos.baidu.com/apistore/pic/item/b7003af33a87e9502d61850613385343fbf2b461.jpg?timestamp=1414994807" width="206" height="101" alt="小蜜蜂网站监测">
+</a>
+</div>
+<div class="api-right-detail fl">
+<h3 class="record-name-version">
+<a href="/astore/serviceinfo/1940.html" class="api-link" target="_blank" title="小蜜蜂网站监测">小蜜蜂网站监测</a>
+</h3>
+<div class="clearfix">
+<div class="fl record-statistic">
+<div class="c_999">
+<span class="record-statistic-item">访问量：1672</span>
+<span class="record-statistic-item">收藏数：14</span>
+<span class="record-statistic-item">评论数：11</span>
+</div>
+<div class="mt5">支持平台：Web</div>
+</div>
+<div class="fr record-required">
+<span class="record-required-item record-free active">免费</span>
+<span class="record-required-item record-auth mt5 active">需要认证</span>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<div class="pager">
+<ul class="pager-list">
+<li class="pager-item"><a class="pager-link pager-first" href="/astore/classificationservicelist?sortBy=default&amp;sortOrder=desc&amp;pageNum=1" data="1">首页</a></li>
+<li class="pager-item"><a class="pager-link pager-caret" href="/astore/classificationservicelist?sortBy=default&amp;sortOrder=desc&amp;pageNum=3" data="3">&lt;&lt;</a></li>
+<li class="pager-item "><a class="pager-link" href="/astore/classificationservicelist?sortBy=default&amp;sortOrder=desc&amp;pageNum=1" data="1">1</a></li>
+<li class="pager-item "><a class="pager-link" href="/astore/classificationservicelist?sortBy=default&amp;sortOrder=desc&amp;pageNum=2" data="2">2</a></li>
+<li class="pager-item "><a class="pager-link" href="/astore/classificationservicelist?sortBy=default&amp;sortOrder=desc&amp;pageNum=3" data="3">3</a></li>
+<li class="pager-item "><span class="pager-link active">4</span></li>
+<li class="pager-item "><a class="pager-link" href="/astore/classificationservicelist?sortBy=default&amp;sortOrder=desc&amp;pageNum=5" data="5">5</a></li>
+<li class="pager-item "><a class="pager-link" href="/astore/classificationservicelist?sortBy=default&amp;sortOrder=desc&amp;pageNum=6" data="6">6</a></li>
+<li class="pager-item "><a class="pager-link" href="/astore/classificationservicelist?sortBy=default&amp;sortOrder=desc&amp;pageNum=7" data="7">7</a></li>
+<li class="pager-item "><span class="pager-seperator">...</span></li>
+<li class="pager-item "><a class="pager-link pager-caret" href="/astore/classificationservicelist?sortBy=default&amp;sortOrder=desc&amp;pageNum=5" data="5">&gt;&gt;</a></li>
+<li class="pager-item "><a class="pager-link pager-last" href="/astore/classificationservicelist?sortBy=default&amp;sortOrder=desc&amp;pageNum=71" data="71">尾页</a></li>
+</ul>
+</div>
+</section>
+</div>
+<footer id="js-footer" class="footer">
+<div class="footer-inner main clearfix">
+<dl class="fl footer-links">
+<dt class="footer-dt">API Store</dt>
+<dd><a class="footer-link" href="/astore/help" target="_blank">关于我们</a></dd>
+<dd><a class="footer-link" href="/astore/help?tag=join" target="_blank">加入我们</a></dd>
+<dd><a class="footer-link" href="/astore/help?tag=tos" target="_blank">服务条款</a></dd>
+</dl>
+<div class="footer-seperator fl"></div>
+<dl class="fl footer-contact">
+<dt  class="footer-dt">联系我们</dt>
+<dd>
+<span class="footer-link">客服邮箱：</span>
+<a class="footer-contact-link" href="mailto:apistore@baidu.com">apistore@baidu.com</a>
+</dd>
+<dd>
+<span class="footer-link">开发者交流QQ群：</span>
+<span class="footer-contact-link">206417017</span>
+</dd>
+<dd>
+<span class="footer-link">贴吧：</span>
+<a class="footer-contact-link" href="//tieba.baidu.com/f?ie=utf-8&kw=apistore&fr=search" target="_blank">API Store官方贴吧</a>
+</dd>
+</dl>
+<div class="footer-seperator fl"></div>
+<dl class="fl footer-qr">
+<div class="qr-wechat"></div>
+</dl>
+</div>
+<ul id="js-scroll-bar" class="scroll-bar">
+<li id="js-backtop" class="scroll-bar-item dn">
+<a href="javascript:void 0" class="bar-link bar-backtop">
+<span class="bar-link-pri"></span>
+<span class="bar-link-sub">返回</br>顶部</span>
+</a>
+</li>
+<li id="js-add-service" class="scroll-bar-item">
+<a href="/astore/serviceadd" class="bar-link bar-add bar-add-hover" target="_blank">
+<span class="bar-link-pri"></span>
+<span class="bar-link-sub">申请</br>服务</span>
+</a>
+</li>
+<li id="js-recommend-service" class="scroll-bar-item">
+<a href="javascript:void 0" class="bar-link bar-recommend">
+<span class="bar-link-pri"></span>
+<span class="bar-link-sub">推荐</br>服务</span>
+</a>
+</li>
+<li id="js-connect-us" class="scroll-bar-item">
+<a href="javascript:void 0" class="bar-link bar-connect">
+<span class="bar-link-pri"></span>
+<span class="bar-link-sub">联系</br>官方</span>
+</a>
+</li>
+</ul>
+<div id="footer_feedback" class="bar-link bar-feedback">
+<span class="bar-link-pri"></span>
+<span class="bar-link-sub">意见</br>反馈</span>
+</div>
+</footer>
+
+<script type="text/javascript" src="http://passport.bdimg.com/passApi/js/uni_login_wrapper.js?cdnversion=201504301728"></script>
+</body><script type="text/javascript" src="/static/common/pkg/static.all_363d92f.js"></script>
+<script type="text/javascript">require.resourceMap({"res":{"api:static/js/modules/list.js":{"url":"/static/api/js/modules/list_a46b562.js","deps":["common:static/js/modules/util.js"]}}});</script><script type="text/javascript" src="/static/common/js/modules/util_327ec71.js"></script>
+<script type="text/javascript" src="/static/api/widget/menu/menu_bec9959.js"></script>
+<script type="text/javascript">!function(){            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?6d83f082b8fe8f41ecc67eba5509d6e9";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+        }();
+!function(){	var header = require('common:widget/header/header.js');
+	header.init();
+}();
+!function(){        require.async(["api:widget/menu/menu.js"], function(mod){
+            mod.init();
+        });
+    }();
+!function(){    require.async(["api:static/js/modules/list.js"], function(mod){
+        mod.init();
+    });
+}();
+!function(){    require.async(["common:widget/footer/footer.js"], function(mod){
+        mod.init();
+    });
+
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6d83f082b8fe8f41ecc67eba5509d6e9' type='text/javascript'%3E%3C/script%3E"));
+	var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254393647'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254393647' type='text/javascript'%3E%3C/script%3E"));
+}();</script></html><!--17067332760907369994043017-->
+<script> var _trace_page_logid = 1706733276; </script><!--17071980250924147210043017-->
+<script> var _trace_page_logid = 1707198025; </script>

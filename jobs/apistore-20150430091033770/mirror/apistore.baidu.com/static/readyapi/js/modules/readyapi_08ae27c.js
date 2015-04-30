@@ -1,0 +1,1 @@
+define("readyapi:static/js/modules/readyapi.js",function(t,i){function a(){$("[data-sort]").on("change",function(){$(this);window.location.href="?isFree="+$('[data-sort="is-free"]').val()+"&isAuth="+$('[data-sort="is-auth"]').val()})}t("common:static/js/modules/util.js");i.init=function(){a()}});
